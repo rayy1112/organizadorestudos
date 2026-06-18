@@ -69,4 +69,4 @@ Não é necessário instalar dependências, servidor ou banco de dados.
 
 ## 👩‍💻 Autora
 
-Rahyssa Alves
+Rahyssa Alves Meireles e Izaías Aguiar de Lima.
