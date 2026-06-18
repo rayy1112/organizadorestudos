@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Estudos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <header class="cabecalho">
+            <p class="rotulo">Planejador acadêmico</p>
+            <h1 class="titulo">Organizador de <span class="marca-texto">Estudos</span></h1>
+            <p class="subtitulo">Liste suas tarefas, marque o que já foi concluído e mantenha o foco nos prazos.</p>
+        </header>
+
+        <main class="painel">
+            <span class="fita" aria-hidden="true"></span>
+
+            <div class="form-tarefa">
+                <div class="campo campo-texto">
+                    <label for="tarefa">Tarefa</label>
+                    <input type="text" id="tarefa" placeholder="Ex.: Estudar para a prova de cálculo">
+                </div>
+
+                <div class="campo campo-data">
+                    <label for="dataTarefa">Prazo</label>
+                    <input type="date" id="dataTarefa">
+                </div>
+
+                <button type="button" class="botao-adicionar" onclick="adicionarTarefa()">
+                    Adicionar
+                </button>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="cabecalho-lista">
+                <h2 class="subheading">Minhas atividades</h2>
+
+                <div class="barra-ordenacao">
+                    <label for="ordenarPor">Ordenar por</label>
+                    <select id="ordenarPor" onchange="ordenarTarefas()">
+                        <option value="criacao">Adicionadas recentemente</option>
+                        <option value="prazo-asc">Prazo mais próximo</option>
+                        <option value="prazo-desc">Prazo mais distante</option>
+                        <option value="pendentes">Pendentes primeiro</option>
+                        <option value="concluidas">Concluídas primeiro</option>
+                        <option value="az">Ordem alfabética (A–Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <ul id="lista" class="lista-tarefas"></ul>
+            <p id="listaVazia" class="estado-vazio">📌 Sua lista está vazia, adicione a primeira tarefa.</p>
+        </main>
+
+        <footer class="rodape">
+            <p>Feito com HTML, CSS e JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
