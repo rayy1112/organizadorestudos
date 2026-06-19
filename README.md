@@ -21,6 +21,7 @@ sem necessidade de instalação (executada diretamente no navegador).
 - **JavaScript** — interatividade e manipulação dinâmica do DOM
   (adicionar, editar, concluir, remover e ordenar tarefas)
 - **Google Fonts** — tipografia (Space Grotesk, Inter e Space Mono)
+- **Bootstrap 5**
 
 ## ⚙️ Funcionalidades
 
